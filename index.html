@@ -5,23 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bhansa - Bharat Saraswat</title>
     <link rel="stylesheet" type="text/css" href="./assets/index.css" />
+    <style>
+      html {
+        font: 112.5%/1.45em georgia, serif;
+      }
+      body {
+        font-family: Nunito, Avenir, Helvetica, "sans-serif";
+        -webkit-font-smoothing: antialiased;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 400;
+        word-wrap: break-word;
+        -webkit-font-kerning: normal;
+        font-kerning: normal;
+        -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+        font-feature-settings: "kern", "liga", "clig", "calt";
+      }
+      header {
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrapper__header__container {
+        max-width: 860px;
+        padding: 1rem 1.0875rem;
+        font-size: 1.2rem;
+      }
+      .wrapper__header__container__a {
+        color: black;
+        margin-left: 15px;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+      }
+      .wrapper__main {
+        margin: 0 auto;
+        max-width: 860px;
+        padding: 0 1.0875rem 1rem;
+        padding-top: 0;
+      }
+      .wrapper__main__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 78vh;
+      }
+      .wrapper__main__container-content {
+        text-align: center;
+      }
+      .wrapper__main__container-content__h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+      }
+      .wrapper__main__container-content__p {
+        padding: 0;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+      .wrapper__footer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <h1>Hi there <span class="lg-hand wave">👋</span></h1>
-      <br />
-      <h4>
-        My name is Bharat Saraswat a.k.a "bhansa", I am a JavaScript Developer
-        and I like to build things.
-      </h4>
-      <img
-        class="feature-image"
-        src="./assets/bhansa.jpg"
-        alt="bhansa's face 😃"
-      />
-      <br />
-      Head over to my blog:
-      <a href="/blog">bhansa's blog</a>
-    </main>
+    <div class="wrapper">
+      <!-- new DOM -->
+      <header class="wrapper__header">
+        <div class="wrapper__header__container">
+          <p>
+            <a class="wrapper__header__container__a" href="/"
+              >Bharat Saraswat</a
+            >
+            <a
+              class="wrapper__header__container__a"
+              href="https://bhansa.github.io/blog"
+              >Blog</a
+            >
+            <a
+              class="wrapper__header__container__a"
+              href="https://github.com/bhansa"
+              >Github</a
+            >
+          </p>
+        </div>
+      </header>
+      <div class="wrapper__main">
+        <main>
+          <div class="wrapper__main__container">
+            <div class="wrapper__main__container-content">
+              <h1 class="wrapper__main__container-content__h1">
+                Bharat Saraswat
+              </h1>
+              <p class="wrapper__main__container-content__p">
+                JavaScript and AEM Developer
+              </p>
+            </div>
+          </div>
+        </main>
+        <footer class="wrapper__footer">
+          <p>
+            ©
+            <!-- -->2020<!-- -->, Built with<!-- -->
+          </p>
+          <a
+            style="margin-left: 5px"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            class="css-o5uqvq e1ehxxwc1"
+            >HTML</a
+          >
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
